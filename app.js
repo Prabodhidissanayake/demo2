@@ -1,5 +1,13 @@
-const givenumber = document.querySelector("#give-number");
+const getUserInput = ()=>{
+    const inputNumber = document.querySelector("#give-number").value;
+    console.log(inputNumber);
+    if(!/^[0-9](,[0-9])*$/.test(inputNumber)){
+        return document.querySelector("#fizz-result").innerHTML = "please enter numbers only";
+    };
+    const split = inputNumber.split(",");
+    fizzBuzz(split);
 
+}
 
 const fizzBuzz = (givenNumber) => {
     const newArry = givenNumber.map(i => {
@@ -25,7 +33,6 @@ const fizzBuzz = (givenNumber) => {
         
         ;
     });
-
   
     return document.querySelector("#fizz-result").innerHTML = newArry;
 };
