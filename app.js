@@ -2,7 +2,7 @@ const getUserInput = ()=>{
     const inputNumber = document.querySelector("#give-number").value;
     console.log(inputNumber);
     if(!/^[0-9](,[0-9])*$/.test(inputNumber)){
-        return document.querySelector("#fizz-result").innerHTML = "please enter numbers only";
+        return document.querySelector("#fizz-result").innerHTML = "Pslease enter numbers only";
     };
     const split = inputNumber.split(",");
     fizzBuzz(split);
