@@ -1,0 +1,3 @@
+This is a program that, based on an array containing numbers between 1-100, prints the number or, if the number is a multiple of three, prints “Fizz” instead of the number and for the multiples of five prints “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz“.
+
+However, if the elements in the array are of any other value than numbers between 1-100 it will signal to the user without throwing any errors! whether the operation was successful or not. This means that if the call has invalid input, e.g. with an array including -4 or "foo", they will get a message back that says there was an error and some indication on what went wrong and how to fix it.
