@@ -1,8 +1,55 @@
+}.header {
+  text-align: center;
+  display: flexbox;
 
-.section{
+}
+.fizz-buzz{
+    font-size: 20px;
+}
+.fizz-buzz:active {
+  background-color: rgb(200, 255, 0);
+}
+.reset:active {
+  background-color: red;
+}
+.reset{
+    font-size: 20px;
+}
+.results{
+    font-size: 30px;
+    color: blue;
+}
+
+body{
+    font-size: 25px;
+    background-color:beige;
+}
+
+.fizz-result{
+    color: black;
+}
+.give-number{
+    font-size: 25px;
+}
+
+.sec1{
+    display: inline-block;
+    border-style: solid;
+    margin-left: 30px;
+    padding: 20px;
+    background-color:aquamarine;
 
 }
 
-.header{
-    text-align: center;
+.sec2{
+    display: inline-block;
+    border-style: solid;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color:aquamarine;
+
+}
+.sec3{
+    margin-left: 30px;
 }
