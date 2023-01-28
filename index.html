@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genesis</title>
-    <script src="app.js" defer></script>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FizzBuzz Application</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <header>
-    <h1 class="header">FizzBuzz Application</h1>
+      <h1 class="header">FizzBuzz Application</h1>
     </header>
-<section class="section">
-    <h3>Game Rules:</h3>
-    <ul>
-        <li> Enter numbers between 1-100 separated by commas <b> (Ex: 1,2,3,4,5,6) </b></li>
+    <div class="sec1">
+      <h3>Game Rules:</h3>
+      <ul>
+        <li>
+          Enter numbers between 1-100 separated by commas
+          <b> (Ex: 1,2,3,4,5,6) </b>
+        </li>
         <li>Strings not accepted</li>
-        <li>Negative numbers are not accepted </li>
-    </ul>
+        <li>Negative numbers are not accepted</li>
+      </ul>
+    </div>
 
-    <h3>You will see:</h3>
-    <ul>
-        <li>If the number is divide by 3 --> "Fizz"</li>
-        <li>If the number is divide by 5 --> "Buzz"</li>
-        <li>If the number is divide by both 3 & 5 --> "FizzBuzz"</li>
-    </ul>
+    <div class="sec2">
+      <h3>You will see:</h3>
+      <ul>
+        <li>If the number is divide by 3 --> <b> "Fizz"</b></li>
+        <li>If the number is divide by 5 --> <b> "Buzz"</b></li>
+        <li>If the number is divide by both 3 & 5 --> <b>"FizzBuzz"</b></li>
+      </ul>
+    </div>
 
- 
-    <input  id="give-number">
-    <button id="fizz-buzz" onclick="getUserInput()"> Start Game! </button>
-    <p>Result: <span id="fizz-result"></span></p>
-    <button onclick="refresh()"> Refresh </button>
-
-</section>
-</body>
+    <div class="sec3">
+      <input class="give-number" />
+      <button class="fizz-buzz" onclick="getUserInput()">Start Game!</button>
+      <p class="results"><b>Result:</b> <span class="fizz-result"></span></p>
+      <button class="reset" onclick="refresh()">Refresh</button>
+    </div>
+  </body>
 </html>
