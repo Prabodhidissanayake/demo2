@@ -6,39 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genesis</title>
     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-    <h1>Week 3 Team Genesis Progress!</h1>
+    <h1 class="header">FizzBuzz Application</h1>
     </header>
-<section>
-    <h2>FizzBuzz</h2>
+<section class="section">
     <h3>Game Rules:</h3>
-    <p> <i> Enter numbers between 1-100 separated by commas Ex: 1,2,3,4</i></p>
+    <ul>
+        <li> Enter numbers between 1-100 separated by commas <b> (Ex: 1,2,3,4,5,6) </b></li>
+        <li>Strings not accepted</li>
+        <li>Negative numbers are not accepted </li>
+    </ul>
+
+    <h3>You will see:</h3>
+    <ul>
+        <li>If the number is divide by 3 --> "Fizz"</li>
+        <li>If the number is divide by 5 --> "Buzz"</li>
+        <li>If the number is divide by both 3 & 5 --> "FizzBuzz"</li>
+    </ul>
+
+ 
     <input  id="give-number">
     <button id="fizz-buzz" onclick="getUserInput()"> Start Game! </button>
     <p>Result: <span id="fizz-result"></span></p>
+    <button onclick="refresh()"> Refresh </button>
 
-    <h2>Roman Numbers Convertor</h2>
-    <input> 
-    <button id="convert">Convert</button>
-    <p>Result: <span></span></p>
-</section>
-<section>
-    <h1>What has been hardest so far?</h1>
-    <ul>
-        <li>Remote work</li>
-        <li>Setup typescript project with lint and mocha</li>
-        <li>Write our test</li>
-        <li>Work in the team</li>
-    </ul>
-    <h1>What has been most fun so far?</h1>
-    <ul>
-        <li>Go to the office and meet new people</li>
-        <li>Learn new concept</li>
-        <li>Write our test</li>
-        <li>Finally done with the hell weeks</li>
-    </ul>
 </section>
 </body>
 </html>

@@ -2,7 +2,7 @@ const getUserInput = ()=>{
     const inputNumber = document.querySelector("#give-number").value;
     console.log(inputNumber);
     if(!/^[0-9]*(,[0-9]*)*$/.test(inputNumber)){
-        return document.querySelector("#fizz-result").innerHTML = "Please enter a valid numbers only";
+        return document.querySelector("#fizz-result").innerHTML = "Please enter valid numbers";
     };
     const split = inputNumber.split(",");
     fizzBuzz(split);
@@ -36,3 +36,7 @@ const fizzBuzz = (givenNumber) => {
   
     return document.querySelector("#fizz-result").innerHTML = newArry;
 };
+
+function refresh(){
+    window.location.reload();
+}
