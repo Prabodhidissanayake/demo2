@@ -4,7 +4,7 @@
 
 }
 .fizz-buzz{
-    font-size: 20px;
+    font-size: 24px;
 }
 .fizz-buzz:active {
   background-color: rgb(200, 255, 0);
@@ -13,7 +13,7 @@
   background-color: red;
 }
 .reset{
-    font-size: 20px;
+    font-size: 24px;
 }
 .results{
     font-size: 30px;
